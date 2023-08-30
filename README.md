@@ -14,5 +14,6 @@
 - select box 생성 및 select box에서 값 선택 시 문자열 출력
 <br/>
 향후 보완 계획:
+<br/>
 - select box에서 특정 값 선택 시 사진 출력 구현
 - select box 이외의 버튼 실습
