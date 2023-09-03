@@ -15,8 +15,15 @@
 - 사진 업로드, export/import 문법, script/template 키워드 실습
 - select box 생성 및 select box에서 값 선택 시 문자열 출력
 2. vue_todo
-- 글
-- 
+- 인스턴스/ 컴포넌트 기본 기본 개념(인스턴스 lifecycle: created/mounted
+- 이벤트 버스/props(props 인자 전달 방식이 더 유용하다 생각됨, 부모/자식 컴포넌트 개념에서 사용, 이벤트 버스의 경우 동일한 레벨의 자식 컴포넌트 사이 통신에 유용)
+- 뷰 라우터(nested router/named view, nested 보다는 named view 방식이 재사용성이나 구현 측면에서 유리하다 생각됨, 페이지 간 이동시 라우터 사용)
+- HTTP 통신(뷰 리소스/axios, cdn/npm 방식 존재, axios 방식이 JSON 추가 파싱이 필요없어서 유리하다 생각됨)
+- 뷰 템플릿(데이터 바인딩/js 표현식/디렉티브/이벤트 처리/고급 템플릿 기법, v-bind(databinding), v접두사 표현식(디렉티브 <중요>), 이벤트 처리 부분이 핵심 + computed/methods 속성의 차이(캐싱측면))
+- SFC(싱글 파일 컴포넌트) 이해 ( .vue 확장자 파일 1개 = 뷰 app 구성 컴포넌트 1개 )
+- 뷰 로더
+- 반응형 웹 디자인
+- 정리: named view/props 방식으로 "할일관리앱(웹앱)" 구현
 <br/>
 향후 보완 계획:
 <br/>
