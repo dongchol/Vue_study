@@ -14,6 +14,9 @@
 - node_modules 파일 제외
 - 사진 업로드, export/import 문법, script/template 키워드 실습
 - select box 생성 및 select box에서 값 선택 시 문자열 출력
+2. vue_todo
+- 글
+- 
 <br/>
 향후 보완 계획:
 <br/>
@@ -22,11 +25,7 @@
 - select box 이외의 버튼 실습
 <br/>
 <br/>
-2. vue_todo
-- 글
 
-<br/>
-<br/>
 
 [참고]
 Git_Bash 활용(sourcetree 활용 시 100MB 이상 파일과 private project에 대해 추가 작업필요)
