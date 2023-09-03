@@ -8,7 +8,7 @@
 - vue 3 snippets
 
 
-1.Vue_prac
+1. Vue_prac
 - node_modules 파일 제외
 - 사진 업로드, export/import 문법, script/template 키워드 실습
 - select box 생성 및 select box에서 값 선택 시 문자열 출력
@@ -18,7 +18,7 @@
 - select box에서 특정 값 선택 시 사진 출력 구현
 <br/>
 - select box 이외의 버튼 실습
-
+<br/>
 2. vue_todo
 - 글
 
@@ -36,3 +36,6 @@ Git_Bash 활용(sourcetree 활용 시 100MB 이상 파일과 private project에 
    - token 이용시 'token'@ 을 깃 주소 앞에 포함
 7. git remote -v (로컬저장소 원격저장소로 연결)
 8. git push orgin [branch] (commit 해놨던 파일들을 원격저장소로 push)
+<오류 케이스>
+- 공통된 commit 지점이 없다면 push 불가(강제 push 시 git push origin +[branch] 명령어 실행)
+- permission 관련 에러와 requested URL returned error: 403 ~~ 이런 에러메시지 발생 시 window 제어판 -> 사용자 계정 -> 자격 증명 관리 -> github 계정(일반 자격 증명) 삭제 후 위 1~8 과정 재시도
