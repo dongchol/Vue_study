@@ -24,6 +24,7 @@
 - 뷰 로더
 - 반응형 웹 디자인
 - 정리: named view/props 방식으로 "할일관리앱(웹앱)" 구현
+- 0904: view router, eslintrc 패키지 추가 설치 및 리팩토링(일부 오류 존재, modal button 수정 예정)
 <br/>
 향후 보완 계획:
 <br/>
