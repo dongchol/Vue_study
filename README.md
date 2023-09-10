@@ -14,7 +14,7 @@
 - node_modules 파일 제외
 - 사진 업로드, export/import 문법, script/template 키워드 실습
 - select box 생성 및 select box에서 값 선택 시 문자열 출력
-2. vue_todo
+2. vue_todo, vue_bstp
 - 인스턴스/ 컴포넌트 기본 기본 개념(인스턴스 lifecycle: created/mounted
 - 이벤트 버스/props(props 인자 전달 방식이 더 유용하다 생각됨, 부모/자식 컴포넌트 개념에서 사용, 이벤트 버스의 경우 동일한 레벨의 자식 컴포넌트 사이 통신에 유용)
 - 뷰 라우터(nested router/named view, nested 보다는 named view 방식이 재사용성이나 구현 측면에서 유리하다 생각됨, 페이지 간 이동시 라우터 사용)
@@ -24,6 +24,24 @@
 - 뷰 로더
 - 반응형 웹 디자인
 - 정리: named view/props 방식으로 "할일관리앱(웹앱)" 구현
+- 0904: view router, eslintrc 패키지 추가 설치 및 리팩토링(일부 오류 존재, modal button 수정 예정)
+3. vue-til-server, vue-til-3
+- 0910 업데이트
+- server: nodeJs(gitbash에서 npm run dev), front: vueJS3(terminal에서 npm run serve)
+- Mongocloud DB cluster 생성 후 API 서버에 연결하여 테스트 진행
+- swagger: API 자동화 문서, 서버에 직접적인 데이터 전송/응답을 할 수 있음
+- vue.config.js 파일에 webpack에서 제공하는 overlay 속성을 false 로 설정시 오류(eslint에러) overlay 무시가능, 생산성 증대 (eslint 에러는 콘솔/터미널만 찍히고 화면에는 연관이 없게됨)
+- ESlint와 prettier 이해, eslint: js코드에서 에러가 날 수 있는 것들에 대한 가능성을 제거, js문법 보조 검사, prettier(코드 정리 도구): eslint에서 설정(eslint의 rule과 충돌됨, 다른 개발 환경에서도 prettier로 같은 문법 적용가능)
+- 절대경로를 이용하는 이유: 상대 경로로 사용할 시 폴더 레벨이 달라지면 번거로워짐(@/ 방식의 절대경로가 유리, jsconfig.json 파일 이용)
+- 뷰 스타일 가이드 필독 (https://v2.vuejs.org/v2/style-guide/#Priority-A-Rules-Essential-Error-Prevention)
+- 코드 스플리팅(성능최적화, 필요한 페이지만 먼저 가져오고 다른 페이지는 url 호출할 때만 가져옴, 적용방법: index.js에 js 화살표 문법 사용)
+- SPA에서 어떤 페이지에 코드 스플리팅 적용할지 고민할 것
+- 라우터 리다이렉트(view router는 내부에 functional component로 구현되어 있음, '/' path에 redirect 값 설정)
+- 라우터 콜백 기능 (라우터 속성에 정해지지 않은 url에 반응하는 법, path: '/:pathMatch(.*)*' 해당 경로에 대한 컴포넌트 선언)
+
+
+
+
 <br/>
 향후 보완 계획:
 <br/>
