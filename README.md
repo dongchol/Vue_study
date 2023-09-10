@@ -26,6 +26,7 @@
 - 정리: named view/props 방식으로 "할일관리앱(웹앱)" 구현
 - 0904: view router, eslintrc 패키지 추가 설치 및 리팩토링(일부 오류 존재, modal button 수정 예정)
 3. vue-til-server, vue-til-3
+- 0910 업데이트
 - server: nodeJs(gitbash에서 npm run dev), front: vueJS3(terminal에서 npm run serve)
 - Mongocloud DB cluster 생성 후 API 서버에 연결하여 테스트 진행
 - swagger: API 자동화 문서, 서버에 직접적인 데이터 전송/응답을 할 수 있음
