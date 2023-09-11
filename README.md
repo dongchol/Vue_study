@@ -38,7 +38,8 @@
 - SPA에서 어떤 페이지에 코드 스플리팅 적용할지 고민할 것
 - 라우터 리다이렉트(view router는 내부에 functional component로 구현되어 있음, '/' path에 redirect 값 설정)
 - 라우터 콜백 기능 (라우터 속성에 정해지지 않은 url에 반응하는 법, path: '/:pathMatch(.*)*' 해당 경로에 대한 컴포넌트 선언)
-
+- v-on은 @로 대체가능
+- @submit.prevent: prevent의 경우 제출 후 페이지 이동하는 기본동작, 새로고침을 막을 수 있음
 
 
 
