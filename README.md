@@ -38,7 +38,14 @@
 - SPA에서 어떤 페이지에 코드 스플리팅 적용할지 고민할 것
 - 라우터 리다이렉트(view router는 내부에 functional component로 구현되어 있음, '/' path에 redirect 값 설정)
 - 라우터 콜백 기능 (라우터 속성에 정해지지 않은 url에 반응하는 법, path: '/:pathMatch(.*)*' 해당 경로에 대한 컴포넌트 선언)
-
+- v-on은 @로 대체가능
+- @submit.prevent: prevent의 경우 제출 후 페이지 이동하는 기본동작, 새로고침을 막을 수 있음
+- 동작 form을 비동기 처리, async await
+- chrome vue에서 console, network -> payload(데이터 전송이 정상적인지와 response number 확인, response 확인
+- 대부분의 백엔드 api는 하나의 endpoint를 바라보게 되어있음
+- 공통 / 환경변수 파일, axios.create() 요청할 때 공통 설정들을 넣을 수 있음, baseURL: 옵션, .env 파일 생성, /api/index.js 의 axios 코드 확인
+- env 파일 설정시 VUE_APP_ 접두사가 붙은 변수는 자동 로드, process.env.VUE_APP_API_URL 방식으로 index.js에서는 사용
+- env 파일 규칙, env.development 로컬, env.production 배포, env dev/prod 공통
 
 
 
@@ -68,3 +75,12 @@ Git_Bash 활용(sourcetree 활용 시 100MB 이상 파일과 private project에 
 <오류 케이스>
 - 공통된 commit 지점이 없다면 push 불가(강제 push 시 git push origin +[branch] 명령어 실행)
 - permission 관련 에러와 requested URL returned error: 403 ~~ 이런 에러메시지 발생 시 window 제어판 -> 사용자 계정 -> 자격 증명 관리 -> github 계정(일반 자격 증명) 삭제 후 위 1~8 과정 재시도
+
+[git 규칙]
+- feat 		: 새로운 기능 추가
+- fix 		: 버그 수정
+- docs 		: 문서 수정
+- style 	: 코드 formatting, 세미콜론(;) 누락, 코드 변경이 없는 경우
+- refactor 	: 코드 리팩토링
+- test 		: 테스트 코드, 리팽토링 테스트 코드 추가
+- chore 	: 빌드 업무 수정, 패키지 매니저 수정
