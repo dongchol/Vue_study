@@ -27,7 +27,7 @@
 - 0904: view router, eslintrc 패키지 추가 설치 및 리팩토링(일부 오류 존재, modal button 수정 예정)
 3. vue-til-server, vue-til-3
 - 0910 업데이트
-- server: nodeJs(gitbash에서 npm run dev), front: vueJS3(terminal에서 npm run serve)
+- server: nodeJs swagger API(gitbash에서 npm run dev), front: vueJS3(terminal에서 npm run serve)
 - Mongocloud DB cluster 생성 후 API 서버에 연결하여 테스트 진행
 - swagger: API 자동화 문서, 서버에 직접적인 데이터 전송/응답을 할 수 있음
 - vue.config.js 파일에 webpack에서 제공하는 overlay 속성을 false 로 설정시 오류(eslint에러) overlay 무시가능, 생산성 증대 (eslint 에러는 콘솔/터미널만 찍히고 화면에는 연관이 없게됨)
@@ -40,7 +40,7 @@
 - 라우터 콜백 기능 (라우터 속성에 정해지지 않은 url에 반응하는 법, path: '/:pathMatch(.*)*' 해당 경로에 대한 컴포넌트 선언)
 - v-on은 @로 대체가능
 - @submit.prevent: prevent의 경우 제출 후 페이지 이동하는 기본동작, 새로고침을 막을 수 있음
-- 동작 form을 비동기 처리, async await
+- 0912: 동작 form을 비동기 처리, async await
 - chrome vue에서 console, network -> payload(데이터 전송이 정상적인지와 response number 확인, response 확인
 - 대부분의 백엔드 api는 하나의 endpoint를 바라보게 되어있음
 - 공통 / 환경변수 파일, axios.create() 요청할 때 공통 설정들을 넣을 수 있음, baseURL: 옵션, .env 파일 생성, /api/index.js 의 axios 코드 확인
