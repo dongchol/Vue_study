@@ -13,7 +13,7 @@
 			<label for="nickname">nickname: </label>
 			<input id="nickname" type="text" v-model="nickname">
 		</div>
-		<button type="submit">회원가입</button>
+		<button v-bind:disabled="!isUsernameValid || !password" type="submit">회원가입</button>
 		<p> {{ logMessage  }} </p>
 	</form>
 </template>
@@ -21,6 +21,8 @@
 <script>
 import { reactive } from 'vue';
 import { registerUser } from '@/api/index.js';
+import { ValidateEmail } from '@/utils/validation.js';
+
 export default {
 	data() {
 		return{
@@ -32,6 +34,11 @@ export default {
 			logMessage: '',
 		};
 	},
+	computed: {
+        isUsernameValid(){
+            return ValidateEmail(this.username);
+        },
+    },
 	methods: {		
 		async submitForm() {
 			console.log('폼제출');
