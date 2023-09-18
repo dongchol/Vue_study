@@ -46,6 +46,9 @@
 - 공통 / 환경변수 파일, axios.create() 요청할 때 공통 설정들을 넣을 수 있음, baseURL: 옵션, .env 파일 생성, /api/index.js 의 axios 코드 확인
 - env 파일 설정시 VUE_APP_ 접두사가 붙은 변수는 자동 로드, process.env.VUE_APP_API_URL 방식으로 index.js에서는 사용
 - env 파일 규칙, env.development 로컬, env.production 배포, env dev/prod 공통
+- 0918 try, catch 문으로 catch(error)의 에러 메시지를 화면에 바로 출력하도록 백단에서 구현하는 것이 좋음 ex) this.logMessage = error.response.data 이후 템플릿에 추가
+- finally 문 추가해서 try catch에 공통으로 들어가는 코드 축약 가능
+- email 과 같은 특정 형식에 대한 validation, js 파일에 validation에 대한 function을 구현하고 v-bind와 disabled= 에 대한 값을 flag로 삼아 검증 진행
 
 
 
