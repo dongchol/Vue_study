@@ -51,6 +51,8 @@
 - email 과 같은 특정 형식에 대한 validation, js 파일에 validation에 대한 function을 구현하고 v-bind와 disabled= 에 대한 값을 flag로 삼아 검증 진행
 - 1004 checkout 및 디자인 적용
 ![image](https://github.com/dongchol/Vue_study/assets/49258960/5530e44d-3b46-4293-b337-63f91e60aa74)
+- programmatic navigation, router.push(location, onComplete?, onAbort?)를 통해 원하는 위치로 이동가능하며, path/parameter/query를 사용할 수 있음
+
 
 
 
