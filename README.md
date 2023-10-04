@@ -49,6 +49,8 @@
 - 0918 try, catch 문으로 catch(error)의 에러 메시지를 화면에 바로 출력하도록 백단에서 구현하는 것이 좋음 ex) this.logMessage = error.response.data 이후 템플릿에 추가
 - finally 문 추가해서 try catch에 공통으로 들어가는 코드 축약 가능
 - email 과 같은 특정 형식에 대한 validation, js 파일에 validation에 대한 function을 구현하고 v-bind와 disabled= 에 대한 값을 flag로 삼아 검증 진행
+- 1004 checkout 및 디자인 적용
+![image](https://github.com/dongchol/Vue_study/assets/49258960/5530e44d-3b46-4293-b337-63f91e60aa74)
 
 
 
