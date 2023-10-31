@@ -52,7 +52,7 @@
 - 1004 checkout 및 디자인 적용
 ![image](https://github.com/dongchol/Vue_study/assets/49258960/5530e44d-3b46-4293-b337-63f91e60aa74)
 - programmatic navigation, router.push(location, onComplete?, onAbort?)를 통해 원하는 위치로 이동가능하며, path/parameter/query를 사용할 수 있음
-
+- vuex: index.js의 vuex.store()에 state, getters, mutations을 정의, header같은 위치에서 접근 시 $store.state.username과 같이 접근
 
 
 
